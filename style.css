@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400&display=swap');
 
+/* Importing the 'Red Hat Mono' font from Google Fonts */
+
 html{
     scroll-behavior: smooth;
+    /* Enable smooth scrolling behavior for the HTML element */
 }
 
 *{
@@ -9,24 +12,29 @@ html{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    /* Apply a global reset to remove default margins and paddings, and set the box-sizing property to border-box to include padding and border in the element's total width and height. Also, set the font-family to 'Roboto' as the default font for all elements. */
 }
 
 a{
     text-decoration: none;
     color: #1c1e53;
     transition: color 0.3s ease;
+    /* Remove the underline from anchor links, set the text color to #1c1e53, and add a smooth color transition effect on hover */
 }
 
 a:hover{
     color: #5e3bee !important;
+    /* Change the text color to #5e3bee on hover, with the !important rule to override any other styles */
 }
 
 h5{
     font-size: 20px;
+    /* Set the font size of heading 5 elements to 20 pixels */
 }
 
 li{
     list-style: none;
+    /* Remove the default bullet points from list items */
 }
 
 nav{
@@ -39,12 +47,14 @@ nav{
     justify-content: space-between;
     height: 80px;
     box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+    /* Style the navigation bar with a white background, sticky position at the top of the page, padding of 0 on the left and right sides, flex layout with centered alignment, a height of 80 pixels, and a box shadow effect */
 }
 
 nav .logo,
 footer .logo{
     display: flex;
     align-items: center;
+    /* Style the logo container with flex layout and centered alignment */
 }
 
 nav .logo a,
@@ -52,18 +62,21 @@ footer .logo a{
     margin-left: 8px;
     font-weight: bold;
     font-size: 20px;
+    /* Add some spacing and styling to the logo text */
 }
 
 nav .logo img,
 footer .logo img{
     width: 40px;
     height: 40px;
+    /* Set the dimensions of the logo image */
 }
 
 nav ul,
 footer .top ul{
     display: flex;
     gap: 40px;
+    /* Style the unordered lists in the navigation and footer sections with flex layout and a gap of 40 pixels between list items */
 }
 
 nav button{
@@ -74,12 +87,14 @@ nav button{
     border: 1px solid #1c1e53;
     cursor: pointer;
     transition: all 0.3s ease;
+    /* Style the navigation buttons with a color of #1c1e53, transparent background, padding, border radius, and a transition effect */
 }
 
 nav button:hover{
     background-color: #5e3bee;
     border-color: #5e3bee;
     color: #fff;
+    /* Change the background color, border color, and text color of the navigation buttons on hover */
 }
 
 nav button#menuButton{
@@ -88,6 +103,7 @@ nav button#menuButton{
     justify-content: center;
     font-size: 24px;
     padding: 7px;
+    /* Hide the menu button by default and style it with centered alignment, font size, and padding */
 }
 
 .main{
@@ -97,28 +113,33 @@ nav button#menuButton{
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    /* Style the main section with a background color of #deebee, padding, flex layout with centered alignment, and a gap between elements */
 }
 
 .main .left{
     display: flex;
     flex-direction: column;
     align-items: start;
+    /* Style the left section of the main content with flex layout and column direction */
 }
 
 .main .left h3{
     margin-top: 10px;
     font-weight: bold;
     font-size: 46px;
+    /* Style the heading 3 element with margin, font weight, and font size */
 }
 
 .main .left h3 span{
     color: #5e3bee;
+    /* Set the color of the span element inside the heading 3 to #5e3bee */
 }
 
 .main .left p{
     color: #1c1e53;
     font-size: 22px;
     margin-top: 20px;
+    /* Style the paragraph element with color and font size */
 }
 
 .main .left button{
@@ -129,14 +150,17 @@ nav button#menuButton{
     padding: 14px 24px;
     border: 1px solid transparent;
     border-radius: 5px;
+    /* Style the button with margin, color, cursor, background color, padding, border, and border radius */
 }
 
 .main .right img{
     width: 500px;
+    /* Set the width of the image in the right section of the main content */
 }
 
 .skills{
     padding: 110px 85px 0;
+    /* Add padding to the skills section */
 }
 
 .skills h3,
@@ -145,12 +169,14 @@ nav button#menuButton{
 .feedback h3{
     font-size: 40px;
     margin-top: 20px;
+    /* Style the heading 3 elements in the skills, about, portfolio, and feedback sections with font size and margin */
 }
 
 .skills .skill-items{
     display: flex;
     margin-top: 70px;
     gap: 30px;
+    /* Style the skill items container with flex layout, margin, and gap between items */
 }
 
 .skills .skill-items .item{
@@ -161,10 +187,12 @@ nav button#menuButton{
     border-bottom: 4px solid transparent;
     cursor: pointer;
     transition: all 0.3s ease;
+    /* Style the skill items with background color, width, border radius, padding, and a transition effect */
 }
 
 .skills .skill-items .item:hover{
     border-color: #5e3bee;
+    /* Change the border color of the skill items on hover */
 }
 
 .skills .skill-items .item .icon{
@@ -177,16 +205,19 @@ nav button#menuButton{
     border-radius: 10px;
     margin-bottom: 22px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    /* Style the icon container with flex layout, background color, dimensions, border radius, margin, and box shadow */
 }
 
 .skills .skill-items .item .icon i{
     font-size: 26px;
     color: #006b6a;
+    /* Style the icon inside the skill items with font size and color */
 }
 
 .skills .skill-items .item h4,
 .portfolio .portfo-items .item .info h4{
     font-size: 18px;
+    /* Style the heading 4 elements inside the skill and portfolio items with font size */
 }
 
 .skills .skill-items .item p{
@@ -194,6 +225,7 @@ nav button#menuButton{
     font-size: 14px;
     line-height: 22px;
     color: #1c1e53;
+    /* Style the paragraph elements inside the skill items with margin, font size, line height, and color */
 }
 
 .about{
@@ -201,25 +233,30 @@ nav button#menuButton{
     display: flex;
     align-items: center;
     gap: 60px;
+    /* Add padding and flex layout to the about section */
 }
 
 .about .left{
     background-color: #deebee;
     border-radius: 10px 10px 0 0;
+    /* Style the left section of the about content with background color and border radius */
 }
 
 .about .left img{
     width: 440px;
+    /* Set the width of the image in the left section of the about content */
 }
 
 .about .right p{
     font-size: 16px;
     margin-top: 30px;
+    /* Style the paragraph element in the right section of the about content with font size and margin */
 }
 
 .portfolio{
     background-color: #deebee;
     padding: 110px 85px;
+    /* Add padding and background color to the portfolio section */
 }
 
 .portfolio .header{
@@ -227,6 +264,7 @@ nav button#menuButton{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 60px;
+    /* Style the header of the portfolio section with flex layout, alignment, and margin */
 }
 
 .portfolio .header button{
@@ -239,16 +277,19 @@ nav button#menuButton{
     gap: 8px;
     border: none;
     border-radius: 10px;
+    /* Style the button in the portfolio header with background color, padding, color, flex layout, cursor, gap, border, and border radius */
 }
 
 .portfolio .header button i{
     font-size: 26px;
+    /* Style the icon inside the portfolio header button with font size */
 }
 
 .portfolio .portfo-items{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* Style the portfolio items container with flex layout and alignment */
 }
 
 .portfolio .portfo-items .item{
@@ -259,10 +300,12 @@ nav button#menuButton{
     cursor: pointer;
     box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
+    /* Style the portfolio items with width, background color, border radius, border, cursor, box shadow, and a transition effect */
 }
 
 .portfolio .portfo-items .item:hover{
     border-color: #5e3bee;
+    /* Change the border color of the portfolio items on hover */
 }
 
 .portfolio .portfo-items .item img{
@@ -271,6 +314,7 @@ nav button#menuButton{
     object-fit: cover;
     object-position: top;
     border-radius: 10px 10px 20px 20px;
+    /* Style the images inside the portfolio items with dimensions and border radius */
 }
 
 .portfolio .portfo-items .item .info{
@@ -278,31 +322,37 @@ nav button#menuButton{
     flex-direction: column;
     gap: 14px;
     padding: 20px 32px 42px;
+    /* Style the information container inside the portfolio items with flex layout, column direction, gap, and padding */
 }
 
 .portfolio .portfo-items .item .info p{
     font-size: 13px;
+    /* Style the paragraph elements inside the portfolio item information with font size */
 }
 
 .portfolio .portfo-items .item .info a{
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-color: #5e3bee;
+    /* Style the anchor links inside the portfolio item information with underline, underline offset, and underline color */
 }
 
 .portfolio .portfo-items .item .info a i{
     margin-left: 2px;
     font-size: 16px;
+    /* Style the icons inside the portfolio item information with margin and font size */
 }
 
 .feedback{
     padding: 110px 85px;
+    /* Add padding to the feedback section */
 }
 
 .feedback .customers{
     margin-top: 50px;
     display: flex;
     gap: 40px;
+    /* Style the customers container in the feedback section with margin and gap between items */
 }
 
 .feedback .customers .item{
@@ -314,26 +364,31 @@ nav button#menuButton{
     padding: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
+    /* Style the customer items with flex layout, column direction, gap, border, padding, cursor, and a transition effect */
 }
 
 .feedback .customers .item .rating{
     color: #006b6a;
     font-size: 22px;
+    /* Style the rating element inside the customer items with color and font size */
 }
 
 .feedback .customers .item:hover{
     border-color: #5e3bee;
+    /* Change the border color of the customer items on hover */
 }
 
 .feedback .customers .item p{
     line-height: 22px;
     font-size: 14px;
+    /* Style the paragraph elements inside the customer items with line height and font size */
 }
 
 .feedback .customers .item .user{
     display: flex;
     align-items: center;
     gap: 10px;
+    /* Style the user container inside the customer items with flex layout and gap between items */
 }
 
 .feedback .customers .item .user img{
@@ -341,16 +396,19 @@ nav button#menuButton{
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
+    /* Style the user image inside the customer items with dimensions and border radius */
 }
 
 .feedback .customers .item .user h5{
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 3px;
+    /* Style the heading 5 element inside the user container with font size, font weight, and margin */
 }
 
 .feedback .customers .item .user p{
     font-size: 12px;
+    /* Style the paragraph element inside the user container with font size */
 }
 
 footer{
@@ -358,6 +416,7 @@ footer{
     padding: 85px;
     display: flex;
     flex-direction: column;
+    /* Style the footer with background color, padding, and flex layout with column direction */
 }
 
 footer .top,
@@ -365,6 +424,7 @@ footer .bottom{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* Style the top and bottom sections of the footer with flex layout and alignment */
 }
 
 footer .top .social-links{
@@ -372,6 +432,7 @@ footer .top .social-links{
     align-items: center;
     gap: 10px;
     font-size: 22px;
+    /* Style the social links container in the top section of the footer with flex layout, alignment, gap, and font size */
 }
 
 footer .separator{
@@ -379,47 +440,57 @@ footer .separator{
     height: 1px;
     background-color: #282938;
     margin: 30px 0 20px;
+    /* Style the separator element in the footer with width, height, background color, and margin */
 }
 
 footer .bottom p{
     font-size: 12px;
+    /* Style the paragraph elements in the bottom section of the footer with font size */
 }
 
 footer .bottom .links a{
     font-size: 12px;
     margin-left: 14px;
+    /* Style the anchor links in the bottom section of the footer with font size and margin */
 }
 
 @media screen and (max-width: 1200px) {
     
     .main .left h5{
         font-size: 18px;
+        /* Adjust the font size of heading 5 elements in the main left section for smaller screens */
     }
 
     .main .left h3{
         font-size: 36px;
+        /* Adjust the font size of heading 3 elements in the main left section for smaller screens */
     }
 
     .main .left p{
         font-size: 18px;
+        /* Adjust the font size of paragraph elements in the main left section for smaller screens */
     }
 
     .main .right img{
         width: 380px;
+        /* Adjust the width of the image in the main right section for smaller screens */
     }
 
     .skills .skill-items{
         gap: 10px;
         justify-content: space-between;
         flex-wrap: wrap;
+        /* Adjust the gap and flex layout of the skill items container for smaller screens */
     }
 
     .skills .skill-items .item{
         width: 49%;
+        /* Adjust the width of the skill items for smaller screens */
     }
 
     .about .left img{
         width: 370px;
+        /* Adjust the width of the image in the left section of the about content for smaller screens */
     }
 
     .skills h3,
@@ -427,22 +498,27 @@ footer .bottom .links a{
     .portfolio .header h3,
     .feedback h3{
         font-size: 32px;
+        /* Adjust the font size of heading 3 elements in the skills, about, portfolio, and feedback sections for smaller screens */
     }
 
     .about .right p{
         font-size: 15px;
+        /* Adjust the font size of paragraph elements in the right section of the about content for smaller screens */
     }
 
     .feedback .customers .item .rating{
         font-size: 20px;
+        /* Adjust the font size of the rating element inside the customer items for smaller screens */
     }
 
     .feedback .customers .item p{
         font-size: 13px;
+        /* Adjust the font size of paragraph elements inside the customer items for smaller screens */
     }
 
     footer .top ul{
         gap: 20px;
+        /* Adjust the gap between list items in the top section of the footer for smaller screens */
     }
 
 }
@@ -451,47 +527,57 @@ footer .bottom .links a{
     
     nav button{
         display: none;
+        /* Hide the navigation buttons for smaller screens */
     }
 
     nav ul{
         gap: 20px;
+        /* Adjust the gap between list items in the navigation for smaller screens */
     }
 
     nav ul li a{
         font-size: 15px;
+        /* Adjust the font size of anchor links in the navigation for smaller screens */
     }
 
     .main{
         flex-direction: column;
+        /* Change the flex direction of the main section to column for smaller screens */
     }
 
     .about{
         flex-direction: column;
         justify-content: center;
+        /* Change the flex direction and alignment of the about section for smaller screens */
     }
 
     .portfolio .portfo-items{
         gap: 22px;
         flex-wrap: wrap;
         justify-content: center;
+        /* Adjust the gap, flex wrap, and alignment of the portfolio items container for smaller screens */
     }
 
     .portfolio .portfo-items .item{
         width: 48%;
+        /* Adjust the width of the portfolio items for smaller screens */
     }
 
     .feedback .customers{
         gap: 14px;
         flex-wrap: wrap;
         justify-content: center;
+        /* Adjust the gap, flex wrap, and alignment of the customers container in the feedback section for smaller screens */
     }
 
     .feedback .customers .item{
         width: 48%;
+        /* Adjust the width of the customer items for smaller screens */
     }
 
     footer .top ul{
         display: none;
+        /* Hide the social links in the top section of the footer for smaller screens */
     }
 
 }
@@ -501,59 +587,73 @@ footer .bottom .links a{
     nav{
         justify-content: space-between;
         padding: 0 42px;
+        /* Adjust the alignment and padding of the navigation for smaller screens */
     }
 
     nav ul{
         display: none;
+        /* Hide the unordered list in the navigation by default for smaller screens */
     }
 
     nav.open .logo{
         display: none;
+        /* Hide the logo in the navigation when the menu is open for smaller screens */
     }
 
     nav.open ul{
         display: flex;
+        /* Display the unordered list in the navigation when the menu is open for smaller screens */
     }
 
     nav button#menuButton{
         display: flex;
+        /* Display the menu button for smaller screens */
     }
 
     .main{
         padding: 42px;
+        /* Adjust the padding of the main section for smaller screens */
     }
 
     .skills{
         padding: 85px 42px 0;
+        /* Adjust the padding of the skills section for smaller screens */
     }
 
     .skills .skill-items{
         gap: 8px;
+        /* Adjust the gap between skill items for smaller screens */
     }
 
     .about{
         padding: 85px 42px;
+        /* Adjust the padding of the about section for smaller screens */
     }
 
     .portfolio{
         padding: 60px 42px;
+        /* Adjust the padding of the portfolio section for smaller screens */
     }
 
     .portfolio .portfo-items{
         gap: 18px;
+        /* Adjust the gap between portfolio items for smaller screens */
     }
 
     .feedback{
         padding: 85px 42px;
+        /* Adjust the padding of the feedback section for smaller screens */
     }
 
     footer{
         padding: 85px 42px;
+        /* Adjust the padding of the footer for smaller screens */
     }
 
     footer .bottom{
         flex-direction: column-reverse;
         gap: 14px;
+        /* Adjust the flex direction and gap between elements in the bottom section of the footer for smaller screens */
     }
 
 }
@@ -562,39 +662,48 @@ footer .bottom .links a{
     
     nav ul li a{
         font-size: 13px;
+        /* Adjust the font size of anchor links in the navigation for smaller screens */
     }
 
     nav .logo a{
         font-size: 18px;
+        /* Adjust the font size of the logo text in the navigation for smaller screens */
     }
 
     .main .left h3{
         font-size: 32px;
+        /* Adjust the font size of heading 3 elements in the main left section for smaller screens */
     }
 
     .main .left p{
         font-size: 16px;
+        /* Adjust the font size of paragraph elements in the main left section for smaller screens */
     }
 
     .main .left button{
         width: 100%;
+        /* Set the width of the button in the main left section to 100% for smaller screens */
     }
 
     .skills .skill-items .item{
         width: 100%;
+        /* Set the width of the skill items to 100% for smaller screens */
     }
 
     .portfolio .header button{
         font-size: 12px;
         padding: 8px 14px;
+        /* Adjust the font size and padding of the button in the portfolio header for smaller screens */
     }
 
     .portfolio .portfo-items .item{
         width: 80%;
+        /* Adjust the width of the portfolio items for smaller screens */
     }
 
     .feedback .customers .item{
         width: 100%;
+        /* Set the width of the customer items to 100% for smaller screens */
     }
 
 }
